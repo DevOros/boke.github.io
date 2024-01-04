@@ -133,16 +133,17 @@ body {
   padding: 40px;
 }
 
-centered2 {
-  max-width: 600px;
+.centered2 {
+  max-width: 80%;
   margin: 0 auto;
   padding: 40px;
   display: flex;
   text-align: center;
   justify-content: center;
-
-  vertical-align: middle;
+  align-items: center;
+  flex-direction: column; /* Añadido para centrar verticalmente el contenido */
 }
+
 .cierre {
   border-left: #ffffff;
   border-top: #ffffff;
@@ -234,6 +235,13 @@ footer {
   .dropdown-content {
   }
 
+  .image-quienes-somos {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
   .logo-and-image {
     padding: 20px;
     flex-direction: column-reverse;
@@ -295,6 +303,7 @@ footer {
   }
 
   #articulos {
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
     grid-gap: 20px;
@@ -327,6 +336,11 @@ section {
   display: flex;
   justify-content: center;
 }
+
+#articulos .item {
+  width: 100%;
+}
+
 #articulos .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Cambiado a tres columnas */
@@ -335,6 +349,13 @@ section {
   text-align: center;
   justify-content: center;
   align-items: center; /* Centrar verticalmente el contenido */
+  max-width: 100%;
+  width: 100%;
+}
+
+#articulos,
+#quienes-somos {
+  overflow: auto;
 }
 
 #articulos .item {
