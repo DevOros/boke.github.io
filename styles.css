@@ -78,7 +78,7 @@ body {
 
 .image {
   background-color: #403429;
-  padding: 45px;
+  padding: 15px;
 
   /* Nueva regla para alinear a la izquierda en pantallas más pequeñas */
   @media only screen and (max-width: 75em) {
